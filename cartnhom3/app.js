@@ -17,37 +17,37 @@ let products = [
     {
         id: 1,
         name: 'ao1',
-        image: '1.PNG',
+        image:'p1.jpg',
         price: 120000
     },
     {
         id: 2,
         name: 'ao2',
-        image: '',
+        image: 'p1.jpg',
         price: 120000
     },
     {
         id: 3,
         name: 'ao3',
-        image: '',
+        image: 'p1.jpg',
         price: 100000
     },
     {
         id: 4,
         name: 'ao4',
-        image: '',
+        image: 'p1.jpg',
         price: 120000
     },
     {
         id: 5,
         name: 'ao5',
-        image: '',
+        image: 'p1.jpg',
         price: 120000
     },
     {
         id: 6,
         name: 'ao6',
-        image: '',
+        image: 'p1.jpg',
         price: 120000
     }
 ];
@@ -57,7 +57,7 @@ function initApp(){
         let newDiv = document.createElement('div');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="image/${value.image}">
+            <img src="./anh cart">
             <div class="title">${value.name}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
@@ -83,7 +83,7 @@ function reloadCard(){
         if(value != null){
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
-                <div><img src="image/${value.image}"/></div>
+                <div><img src="./anh cart${value.image}"/></div>
                 <div>${value.name}</div>
                 <div>${value.price.toLocaleString()}</div>
                 <div>
